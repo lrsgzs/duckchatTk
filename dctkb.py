@@ -7,18 +7,20 @@ while True:
     xz = buttonbox(
         msg="请选择你要用的鸭信：",
         title="选择一个鸭信",
-        choices=["阳光工作室鸭信","LRS鸭信","退出"]
+        choices=["阳光工作室鸭信","LRS鸭信","若宇鸭信","退出"]
         )
     #判断内容及退出
     if xz == "阳光工作室鸭信":
         we = "http://chat.yangguang-gongzuoshi.top"
     elif xz == "LRS鸭信":
         we = "http://lrsgzs.free.svipss.top/"
+    elif xz == "若宇鸭信":
+        we = "http://wry.free.svipss.top/"
     else:
         break
     #初始化
     main = Tk()
-    main.title('浏览器')
+    main.title('鸭信电脑版')
     main.geometry("500x500+10+10")
     main.iconbitmap("./favicon.ico")
     #web组件
